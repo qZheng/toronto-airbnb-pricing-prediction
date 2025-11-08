@@ -6,7 +6,7 @@ Predicted vs Actual - Each point is a listing. The closer to the diagonal, the b
 
 Loss Curve - Training and validation MSE over epochs; early stopping kicks in when validation no longer improves.
 
-Top Feature Weights — Largest positive/negative weights in the standardized / one-hot space.
+Top Feature Weights - Largest positive/negative weights in the standardized / one-hot space.
 
 **How it works:**
   1) Loads & clean csv data.  
