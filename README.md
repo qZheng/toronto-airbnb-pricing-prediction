@@ -1,5 +1,19 @@
 This is my work with Torch and scikit to build a linear regression model that predicts Toronto Airbnb nightly prices.
 
+The model was trained locally on an M4 Pro MacBook Pro using the Apple MPS backend for PyTorch acceleration.
+After cleaning the dataset, the script split the data into:
+
+Train: 10,866 rows
+Validation: 2,330 rows
+Test: 2,329 rows
+
+Training stopped automatically at epoch 106 due to early-stopping on validation loss.
+Final evaluation on the test set gave the following metrics (on the original $ scale):
+
+MAE	$56.01
+RMSE	$101.75
+R^2	0.4565
+
 <p align="center"> <img src="artifacts/pred_vs_actual.png" width="420"/> <img src="artifacts/loss_curve.png" width="420"/> <img src="artifacts/top_weights.png" width="420"/></p>
 
 Predicted vs Actual - Each point is a listing. The closer to the diagonal, the better the prediction.
