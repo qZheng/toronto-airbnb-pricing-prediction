@@ -1,0 +1,11 @@
+{
+  "device": "mps",
+  "n_train": 10866,
+  "n_features": 147,
+  "metrics": {
+    "MAE_$": 56.00740051269531,
+    "RMSE_$": 101.7484359741211,
+    "R2": 0.4564627408981323
+  },
+  "note": "Target was log1p(price); metrics are on original $ scale."
+}
